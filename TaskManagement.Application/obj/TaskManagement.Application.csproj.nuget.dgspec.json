@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Mine\\Projects\\TaskManagement\\TaskManagement\\TaskManagement.csproj": {}
+    "D:\\Mine\\Projects\\TaskManagement\\TaskManagement.Application\\TaskManagement.Application.csproj": {}
   },
   "projects": {
-    "D:\\Mine\\Projects\\TaskManagement\\TaskManagement\\TaskManagement.csproj": {
+    "D:\\Mine\\Projects\\TaskManagement\\TaskManagement.Application\\TaskManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Mine\\Projects\\TaskManagement\\TaskManagement\\TaskManagement.csproj",
-        "projectName": "TaskManagement",
-        "projectPath": "D:\\Mine\\Projects\\TaskManagement\\TaskManagement\\TaskManagement.csproj",
+        "projectUniqueName": "D:\\Mine\\Projects\\TaskManagement\\TaskManagement.Application\\TaskManagement.Application.csproj",
+        "projectName": "TaskManagement.Application",
+        "projectPath": "D:\\Mine\\Projects\\TaskManagement\\TaskManagement.Application\\TaskManagement.Application.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "D:\\Mine\\Projects\\TaskManagement\\TaskManagement\\obj\\",
+        "outputPath": "D:\\Mine\\Projects\\TaskManagement\\TaskManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 25.1\\Components\\Offline Packages",
@@ -54,13 +54,23 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
+            "AutoMapper": {
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[15.0.1, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "FluentValidation": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
             }
           },
           "imports": [
@@ -75,9 +85,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
